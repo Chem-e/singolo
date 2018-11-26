@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'LatoBold';
+    src: url('../fonts/Lato-Bold.ttf') format('truetype');
+}
+
+.red {
+    color: red !important;
+}
+
+.navbar {
+    border-bottom: 5px solid #373b4a;
+    background: #303441;
+    font-family: 'LatoBold';
+}
+
+.dot {
+    padding-top: 0px;
+    color: #494e62 !important;
+    font-size: 30px;
+    margin-top: -4px;
+}
+
+.items {
+    padding-top: 19px;
+    font-size: 12px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+#home {
+    height: 583px;
+    background: #eb5055;
+}
