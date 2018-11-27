@@ -6,49 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Singolo</title>
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
-
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
     <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
 </head>
 
 <body>
 
+    <!-- Navbar!! -->
+
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">SINGOLO <sup class="red">*</sup></a>
+            <a class="navbar-brand" href="#">SINGOLO <sup class="font-color-peach">*</sup></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse ml-auto" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ml-auto mt-2 align-middle mt-lg-0">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link red items" href="home">HOME</a>
+                        <a class="nav-link font-color-peach navbar-items" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item dot-navbar-breaker ">
+                        .
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link dot ">.</a>
+                        <a class="nav-link navbar-items" href="#services">SERVICES </a>
+                    </li>
+                    <li class="nav-item dot-navbar-breaker ">
+                        .
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link items" href="#">SERVICES </a>
+                        <a class="nav-link navbar-items" href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item dot-navbar-breaker ">
+                        .
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link dot ">.</a>
+                        <a class="nav-link navbar-items" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item dot-navbar-breaker ">
+                        .
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link items" href="#">PORTFOLIO</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link dot ">.</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link items" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link dot ">.</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link items" href="#">CONTACT </a>
+                        <a class="nav-link navbar-items" href="#">CONTACT </a>
                     </li>
 
                 </ul>
@@ -56,9 +58,130 @@
             </div>
         </div>
     </nav>
-    <section id="home">
 
+    <!-- Home!! -->
+
+    <section id="home" class="peach-background ">
+        <div class=" d-flex justify-content-between  home">
+            <div> <img class="home-image1 " src="images\previous-arrow.png"></div>
+            <div> <img class="home-image2 " src="images\verticalphone.png"></div>
+            <div> <img class="home-image3 " src="images\horizontalphone.png"></div>
+            <div> <img class="home-image4 " src="images\next-arrow.png"></div>
+
+
+        </div>
     </section>
+
+    <!--  Our services  -->
+
+    <section id="services" class="white-background ">
+        <div class="card">
+            <div class="card-body flex-wrap">
+                <h1 class="services-main-heading">
+                    Our Services
+                </h1>
+                <p class="services-content">
+                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+                </p>
+                <div class=" d-flex justify-content-between flex-wrap">
+                    <div class="d-flex   service-items">
+                        <div class="services-images">
+                            <img src="images\pencil.png">
+                        </div>
+                        <div>
+                            <h3 class="services-sub-headings">
+                                Custom Design
+                            </h3>
+                            <p class="services-paragraphs">
+                                Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex service-items ">
+
+
+                        <div class="services-images">
+                            <img src="images\bulb.png">
+                        </div>
+                        <div>
+                            <h3 class="services-sub-headings">
+                                Inovative Ideas
+                            </h3>
+                            <p class="services-paragraphs">
+                                Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" d-flex  service-items  ">
+                        <div class="services-images">
+                            <img src="images\heart.png">
+                        </div>
+                        <div>
+                            <h3 class="services-sub-headings">
+                                Love Is The Answer
+                            </h3>
+                            <p class="services-paragraphs">
+                                Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- <div class=" d-flex justify-content-between flex-wrap "> -->
+                    <div class=" d-flex  service-items  ">
+                        <div class="services-images">
+                            <img src="images\phone.png">
+                        </div>
+                        <div>
+                            <h3 class="services-sub-headings">
+                                Responsive Layout
+                            </h3>
+                            <p class="services-paragraphs">
+                                Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" d-flex  service-items  ">
+                        <div class="services-images">
+                            <img src="images\message.png">
+                        </div>
+                        <div>
+                            <h3 class="services-sub-headings">
+                                24 / 7 Support
+                            </h3>
+                            <p class="services-paragraphs">
+                                Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" d-flex  service-items  ">
+                        <div class="services-images">
+                            <img src="images\star.png">
+                        </div>
+                        <div>
+                            <h3 class="services-sub-headings">
+                                Feel Like A Star
+                            </h3>
+                            <p class="services-paragraphs">
+                                Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--  Portfolio-->
+
+    <section id="portfolio">
+        fekhdjfgyu
+    </section>
+
 
 </body>
 

@@ -1,35 +1,169 @@
 @font-face {
-    font-family: 'LatoBold';
+    font-family: latoBold;
     src: url('../fonts/Lato-Bold.ttf') format('truetype');
 }
 
-.red {
-    color: red !important;
+@font-face {
+    font-family: latoBlack;
+    src: url('../fonts/Lato-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: latoLight;
+    src: url('../fonts/Lato-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: latoRegular;
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+.font-color-peach {
+    color: #eb5055;
+}
+
+.peach-background {
+    background: #eb5055;
+    border-bottom: 12px solid #ea676b;
+}
+
+.white-background {
+    background: #f2f2f2;
+    border-bottom: 12px solid #ffffff;
 }
 
 .navbar {
     border-bottom: 5px solid #373b4a;
     background: #303441;
-    font-family: 'LatoBold';
+    font-family: latoBold;
 }
 
-.dot {
-    padding-top: 0px;
+.dot-navbar-breaker {
+    padding-top: 5px;
     color: #494e62 !important;
-    font-size: 30px;
-    margin-top: -4px;
+    font-size: 20px;
 }
 
-.items {
+.navbar-items {
     padding-top: 19px;
     font-size: 12px;
+}
+
+.nav-link:hover {
+    color: #eb5055 !important;
 }
 
 .navbar-brand {
     font-size: 25px;
 }
 
-#home {
-    height: 583px;
-    background: #eb5055;
+.home {
+    padding: 66px 30px 31px 30px;
+}
+
+.home-image3 {
+    padding-top: 23%;
+}
+
+.home-image1,
+.home-image4 {
+    padding-top: 214px;
+}
+
+.services-main-heading {
+    font-family: latoBlack;
+    font-size: 30px;
+    margin: 14px;
+}
+
+.services-content {
+    font-family: latoLight;
+    font-size: 18px;
+    margin: 15px;
+}
+
+.service-items {
+    margin: 25px;
+    width: 28%;
+}
+
+.services-images {
+    margin: 4px 32px 0px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.services-sub-headings {
+    font-family: latoBlack;
+    font-size: 18px;
+}
+
+.services-paragraphs {
+    font-family: latoRegular;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.card {
+    border: none;
+}
+
+
+/* 
+
+
+Media Querries
+
+
+*/
+
+@media screen and (max-width: 767px) {
+    .home {
+        padding: 26px 30px 31px 30px;
+    }
+    .home-image1,
+    .home-image4 {
+        margin-top: 77px;
+        width: 10px;
+        height: 15px;
+        padding-top: 174%;
+        margin-left: -11px;
+    }
+    .home-image2 {
+        width: 80px;
+        margin-left: 17px;
+    }
+    .home-image3 {
+        width: 160px;
+        margin-left: 23px;
+        margin-right: 27px;
+    }
+    .service-items {
+        margin: 25px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .home {
+        padding: 50px 30px 31px 30px;
+    }
+    .home-image1,
+    .home-image4 {
+        padding-top: 117px;
+        margin: 22px;
+    }
+    .home-image2 {
+        width: 155px;
+    }
+    .home-image3 {
+        width: 310px;
+        margin-left: 15px;
+        margin-right: -18px;
+        padding-top: 26%;
+    }
+    .service-items {
+        margin: 2px;
+        width: 28%;
+    }
 }
