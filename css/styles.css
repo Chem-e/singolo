@@ -18,6 +18,10 @@
     src: url('../fonts/Lato-Regular.ttf') format('truetype');
 }
 
+.body {
+    overflow-x: hidden;
+}
+
 .container-fluid {
     padding-left: 0;
     padding-right: 0;
@@ -27,22 +31,26 @@
     color: #eb5055;
 }
 
-.peach-background {
+.font-color-black {
+    color: #666d89;
+}
+
+.font-color-purple {
+    color: #606681;
+}
+
+.background-peach {
     background: #eb5055;
     border-bottom: 5px solid #ea676b;
 }
 
-.black-background {
+.background-black {
     background: #303441 !important;
 }
 
-.white-background {
+.background-white {
     background: #f2f2f2;
     border-bottom: 5px solid #ffffff;
-}
-
-.black-text {
-    color: #666d89;
 }
 
 .main-heading {
@@ -54,7 +62,8 @@
 .main-content {
     font-family: latoLight;
     font-size: 18px;
-    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 41px;
 }
 
 .sub-heading {
@@ -69,13 +78,10 @@
     color: #8b8faa;
 }
 
-.purple-text {
-    color: #606681;
-}
 
-.full-width-images {
+/* .full-width-images {
     width: 100%;
-}
+} */
 
 .white-text {
     color: #f0d8d9;
@@ -87,7 +93,7 @@
     font-family: latoBold;
 }
 
-.dot-navbar-breaker {
+.navbar-separator {
     padding-top: 5px;
     color: #494e62 !important;
     font-size: 20px;
@@ -107,21 +113,17 @@
 }
 
 .home {
-    padding: 66px 30px 31px 30px;
+    padding-top: 78px;
+    padding-bottom: 95px;
 }
 
-.home-image3 {
-    padding-top: 23%;
-}
-
-.home-image1,
-.home-image4 {
-    padding-top: 214px;
+.services {
+    padding-top: 40px;
 }
 
 .service-items {
-    margin: 25px;
-    width: 28%;
+    padding-bottom: 41px;
+    width: 27%;
 }
 
 .services-images {
@@ -138,46 +140,49 @@
 .portfolio {
     background: #303441;
     border-bottom: 5px solid #373b4a;
+    padding-bottom: 75px;
+    padding-top: 38px;
 }
 
-.btn {
+.portfolio-main-content {
+    font-family: latoLight;
+    font-size: 18px;
+    padding-top: 17px;
+}
+
+.portfolio-buttons {
     margin-right: 10px;
     color: #606681;
 }
 
-.btn-outline-secondary:hover {
+.portfolio-buttons:hover {
     border: 1px solid white;
     background: #303441;
 }
 
 .portfolio-images {
-    margin-bottom: 96px;
-    padding: 22px;
+    margin: 22px 2px 22px 6px;
 }
 
-.col-sm-3 {
+.portfolio-image-grid {
     margin-bottom: 15px;
 }
 
 .about-us {
-    padding-top: 26px;
-    padding-left: 39px;
-    padding-right: 28px;
+    padding: 54px 28px 60px 33px;
 }
 
 .about-icons {
-    margin-bottom: 60px;
+    padding-bottom: 20px;
 }
 
 .person {
-    margin-top: 17px;
-    margin-bottom: 13px;
+    padding-top: 28px;
+    padding-bottom: 10px;
 }
 
 .contacts {
-    padding-top: 26px;
-    padding-left: 39px;
-    padding-right: 28px;
+    padding: 55px 20px 105px 36px;
 }
 
 .form-control {
@@ -188,59 +193,45 @@
 .form-control::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #df686c;
-    font-family: ;
-    font-size: ;
+    font-family: latoRegular;
+    font-size: 12px;
 }
 
 .form-control::-moz-placeholder {
     /* Firefox 19+ */
     color: #df686c;
-    font-family: ;
-    font-size: ;
+    font-family: latoRegular;
+    font-size: 12px;
 }
 
 .form-control :-ms-input-placeholder {
     /* IE 10+ */
     color: #df686c;
-    font-family: ;
-    font-size: ;
+    font-family: latoRegular;
+    font-size: 12px;
 }
 
 .form-control:-moz-placeholder {
     /* Firefox 18- */
     color: #df686c;
-    font-family: ;
-    font-size: ;
-}
-
-.qoute-heading {
-    margin-top: 35px;
+    font-family: latoRegular;
+    font-size: 12px;
 }
 
 .contacts-description {
-    margin-top: 23px;
-    margin-bottom: 52px;
-    ;
-}
-
-.contact-info {
-    margin-top: -1px;
+    padding-top: 15px;
+    padding-bottom: 52px;
 }
 
 .input-feilds {
-    margin-bottom: 38px;
-}
-
-.form-control {
-    margin-bottom: 23px;
+    margin-bottom: 22px;
 }
 
 .info-description {
-    margin-bottom: 28px;
-    margin-top: 11px;
+    padding-bottom: 17px;
 }
 
-.card-footer {
+.footer-content {
     color: #666d89;
     font-family: latoRegular;
     font-size: 12px;
@@ -265,56 +256,53 @@ Media Querries
 
 @media screen and (max-width: 767px) {
     .home {
-        padding: 26px 30px 31px 30px;
+        Padding-top: 20px;
+        padding-bottom: 30px;
     }
-    .home-image1,
-    .home-image4 {
-        margin-top: 77px;
+    .previous-arrow,
+    .next-arrow {
         width: 10px;
-        height: 15px;
-        padding-top: 174%;
-        margin-left: -11px;
     }
-    .home-image2 {
+    .vertical-phone {
         width: 80px;
-        margin-left: 17px;
     }
-    .home-image3 {
+    .horizontal-phone {
         width: 160px;
-        margin-left: 23px;
-        margin-right: 27px;
     }
     .service-items {
         margin: 25px;
         width: 100%;
     }
-    .btn {
+    .portfolio-buttons {
         width: 100%;
         margin-bottom: 12px;
         margin-left: 5px;
+    }
+    .footer {
+        width: 100%;
+        padding-left: 21%;
+        margin-bottom: 0;
+    }
+    .footer-icons {
+        padding-left: 25%;
+        padding-bottom: 8%;
+        margin-top: 0;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .home {
-        padding: 50px 30px 31px 30px;
+        Padding-top: 43px;
+        padding-bottom: 50px;
     }
-    .home-image1,
-    .home-image4 {
-        padding-top: 117px;
-        margin: 22px;
-    }
-    .home-image2 {
+    .vertical-phone {
         width: 155px;
     }
-    .home-image3 {
+    .horizontal-phone {
         width: 310px;
-        margin-left: 15px;
-        margin-right: -18px;
-        padding-top: 26%;
     }
     .service-items {
         margin: 2px;
-        width: 28%;
+        width: 46%;
     }
 }
