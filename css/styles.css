@@ -18,13 +18,8 @@
     src: url('../fonts/Lato-Regular.ttf') format('truetype');
 }
 
-.body {
+body {
     overflow-x: hidden;
-}
-
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .font-color-peach {
@@ -53,6 +48,10 @@
     border-bottom: 5px solid #ffffff;
 }
 
+.color-white {
+    color: #f0d8d9;
+}
+
 .main-heading {
     font-family: latoBlack;
     font-size: 30px;
@@ -78,18 +77,8 @@
     color: #8b8faa;
 }
 
-
-/* .full-width-images {
-    width: 100%;
-} */
-
-.white-text {
-    color: #f0d8d9;
-}
-
 .navBar {
     border-bottom: 5px solid #373b4a;
-    background: #303441;
     font-family: latoBold;
 }
 
@@ -100,7 +89,6 @@
 }
 
 .navbar-items {
-    padding-top: 19px;
     font-size: 12px;
 }
 
@@ -117,42 +105,18 @@
     padding-bottom: 95px;
 }
 
-.services {
-    padding-top: 40px;
-}
-
-.service-items {
-    padding-bottom: 41px;
-    width: 27%;
-}
-
-.services-images {
-    margin: 4px 32px 0px 0px;
-    width: 40px;
-    height: 40px;
-}
-
 .card {
     border: none;
     background: #f2f2f2;
 }
 
 .portfolio {
-    background: #303441;
     border-bottom: 5px solid #373b4a;
-    padding-bottom: 75px;
-    padding-top: 38px;
 }
 
 .portfolio-main-content {
     font-family: latoLight;
     font-size: 18px;
-    padding-top: 17px;
-}
-
-.portfolio-buttons {
-    margin-right: 10px;
-    color: #606681;
 }
 
 .portfolio-buttons:hover {
@@ -160,29 +124,8 @@
     background: #303441;
 }
 
-.portfolio-images {
-    margin: 22px 2px 22px 6px;
-}
-
-.portfolio-image-grid {
-    margin-bottom: 15px;
-}
-
-.about-us {
-    padding: 54px 28px 60px 33px;
-}
-
 .about-icons {
     padding-bottom: 20px;
-}
-
-.person {
-    padding-top: 28px;
-    padding-bottom: 10px;
-}
-
-.contacts {
-    padding: 55px 20px 105px 36px;
 }
 
 .form-control {
@@ -218,31 +161,10 @@
     font-size: 12px;
 }
 
-.contacts-description {
-    padding-top: 15px;
-    padding-bottom: 52px;
-}
-
-.input-feilds {
-    margin-bottom: 22px;
-}
-
-.info-description {
-    padding-bottom: 17px;
-}
-
 .footer-content {
-    color: #666d89;
     font-family: latoRegular;
     font-size: 12px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding-left: 24px;
     border: none;
-}
-
-.footer-icons {
-    margin-top: 15px;
 }
 
 
